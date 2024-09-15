@@ -49,34 +49,36 @@ const Info = () => {
   return (
     <>
       <main>
-        <input
-          type="text"
-          value={name}
-          onChange={onChangeName}
-          placeholder="name을 입력하세요."
-        />
-        <input
-          type="text"
-          value={nickname}
-          onChange={onChangeNickname}
-          placeholder="nickname을 입력하세요."
-        />
-        <p>
-          현재{" "}
-          {!name ? (
-            <span>name이 비어있습니다.</span>
-          ) : (
-            <span>{name}입니다.</span>
-          )}
-        </p>
-        <p>
-          현재{" "}
-          {!nickname ? (
-            <span>nickname이 비어있습니다.</span>
-          ) : (
-            <span>{nickname}입니다.</span>
-          )}
-        </p>
+        <div>
+          <input
+            type="text"
+            value={name}
+            onChange={onChangeName}
+            placeholder="name을 입력하세요."
+          />
+          <input
+            type="text"
+            value={nickname}
+            onChange={onChangeNickname}
+            placeholder="nickname을 입력하세요."
+          />
+          <p>
+            현재{" "}
+            {!name ? (
+              <span>name이 비어있습니다.</span>
+            ) : (
+              <span>{name}입니다.</span>
+            )}
+          </p>
+          <p>
+            현재{" "}
+            {!nickname ? (
+              <span>nickname이 비어있습니다.</span>
+            ) : (
+              <span>{nickname}입니다.</span>
+            )}
+          </p>
+        </div>
       </main>
     </>
   );

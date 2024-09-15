@@ -39,11 +39,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
     gap: 10px;
 }
 
 .Link {
-    width: 100px;
+    width: 130px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -54,6 +55,8 @@
     color: #fff;
     border-radius: 10px;
     transition: all ease-in 0.1s;
+
+    font-size: 15px;
 }
 
 .Link:hover {

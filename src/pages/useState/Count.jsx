@@ -7,9 +7,13 @@ const Count = () => {
   return (
     <>
       <main>
-        <p>현재 {count}입니다.</p>
-        <button onClick={() => setCount(count + 1)}>+ 1</button>
-        <button onClick={() => setCount(count - 1)}>- 1</button>
+        <div>
+          <p>현재 {count}입니다.</p>
+          <div>
+            <button onClick={() => setCount(count + 1)}>+ 1</button>
+            <button onClick={() => setCount(count - 1)}>- 1</button>
+          </div>
+        </div>
       </main>
     </>
   );

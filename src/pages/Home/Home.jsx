@@ -18,6 +18,9 @@ const Home = () => {
             <Link to={"/visible"} className="Link">
               Visible
             </Link>
+            <Link to={"/contextsample"} className="Link">
+              ContextSample
+            </Link>
           </div>
         </div>
       </div>

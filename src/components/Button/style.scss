@@ -1,0 +1,19 @@
+.Btn {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  background-color: #61dafb;
+  color: #fff;
+  border-radius: 10px;
+  transition: all ease-in 0.1s;
+
+  font-size: 15px;
+
+  &:hover {
+    background-color: #5cceee;
+  }
+}

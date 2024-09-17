@@ -43,6 +43,50 @@
     gap: 10px;
 }
 
+.toggleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggleBtn {
+    width: 130px;
+    height: 40px;
+
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: all ease-in 0.1s;
+
+    font-size: 15px;
+}
+
+.toggleBtn:hover {
+    background-color: #5cceee;
+}
+
+.countContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(-20px);
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.countContainer.open {
+    transform: translateY(0);
+    opacity: 1;
+    height: auto;
+}
+
 .Link {
     width: 130px;
     height: 40px;

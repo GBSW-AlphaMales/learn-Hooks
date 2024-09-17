@@ -1,10 +1,11 @@
-import "./App.css";
-import Home from "./pages/Home/Home";
-import Count from "./pages/useState/Count";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./pages/Main/Home/Home";
+import UseStateCount from "./pages/useState/Count";
 import Info from "./pages/useState/Info";
 import Visible from "./pages/useState/Visible";
 import ContextSample from "./pages/useContext/ContextSample";
+import UseReducerCount from "./pages/useReducer/Count";
 
 function App() {
   return (
@@ -12,11 +13,13 @@ function App() {
       <Routes>
         <Route path={"/"} element={<Home />} />
         {/* useState */}
-        <Route path={"/count"} element={<Count />} />
+        <Route path={"/stateCount"} element={<UseStateCount />} />
         <Route path={"/info"} element={<Info />} />
         <Route path={"/visible"} element={<Visible />} />
         {/* useContext */}
         <Route path={"/contextsample"} element={<ContextSample />} />
+        {/* useReducer */}
+        <Route path={"/reducerCount"} element={<UseReducerCount />} />
       </Routes>
     </Router>
   );

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // useState의 이해
-const Count = () => {
+const UseStateCount = () => {
   const [count, setCount] = useState(0);
 
   return (
@@ -18,4 +18,4 @@ const Count = () => {
     </>
   );
 };
-export default Count;
+export default UseStateCount;
